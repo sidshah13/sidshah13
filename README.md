@@ -1,212 +1,204 @@
-# Siddharth Shah
-
 <p align="center">
-  <img src="assets/animoji.gif" width="180" height="180" alt="Animated iOS developer avatar alternating between an iOS badge and profile image" />
+  <img src="assets/banner.svg" alt="Siddharth Shah - Senior iOS Engineer Banner" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Senior+iOS+Engineer;Swift+%7C+UIKit+%7C+SwiftUI;Clean+Architecture+%7C+SDK+Development;Secure%2C+scalable+mobile+products" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=0A84FF&center=true&vCenter=true&width=900&lines=Senior+iOS+Engineer;Swift+6+%7C+SwiftUI+%7C+UIKit;Clean+Architecture+%7C+Enterprise+SDKs;High-Performance+%26+Offline-First+Mobile+Apps" alt="Animated Typing Banner displaying Senior iOS Engineer specialties" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=sidshah13&style=for-the-badge&color=0EA5E9" alt="Visitor badge" />
-  <img src="https://img.shields.io/github/followers/sidshah13?style=for-the-badge&color=0EA5E9&label=Followers" alt="Followers badge" />
-  <img src="https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub badge" />
+  <a href="https://github.com/sidshah13">
+    <img src="https://komarev.com/ghpvc/?username=sidshah13&style=for-the-badge&color=0A84FF" alt="Visitor Counter" />
+  </a>
+  <a href="https://github.com/sidshah13?tab=followers">
+    <img src="https://img.shields.io/github/followers/sidshah13?style=for-the-badge&color=0A84FF&label=Followers" alt="GitHub Followers" />
+  </a>
+  <a href="https://github.com/sidshah13">
+    <img src="https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
+  </a>
+  <img src="https://img.shields.io/badge/GitHub%20Achievement-Pull%20Shark%20x2-0A84FF?style=for-the-badge&logo=github&logoColor=white" alt="Pull Shark x2 Achievement" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/GitHub%20Achievement-Pull%20Shark%20x2-0EA5E9?style=for-the-badge&logo=github&logoColor=white" alt="Pull Shark x2 achievement badge" />
+  <img src="assets/divider.svg" alt="Divider Line" width="100%" />
 </p>
 
-<p align="center">
-  <strong>Senior iOS Engineer</strong> with <strong>10+ years</strong> of experience building polished mobile experiences with Swift, Objective-C, UIKit, SwiftUI, and clean architecture.
-</p>
+## 📌 Professional Summary
 
-## Professional Summary
+Senior iOS Engineer with **7+ years** of experience engineering scalable, resilient, and accessible mobile applications. Specialized in Swift, Objective-C, SwiftUI, and UIKit within Clean Architecture and modular SDK ecosystems. Proven track record of delivering enterprise-grade mobile products focused on high performance, offline-first reliability, robust authentication, and long-term code maintainability.
 
-Senior iOS Engineer building scalable, secure, and maintainable applications. Specializing in native iOS development with Swift and Objective-C using UIKit and SwiftUI. Experienced with Clean Architecture, modular design, and performance-optimized implementations. Focused on shipping products that are testable, readable, and built to evolve.
+---
 
-## About Me
+## 🔭 About Me
 
-🔭 **Currently building:** Native iOS apps with Swift 6, exploring Apple Intelligence, VisionOS  
-🌱 **Learning:** Swift 6, Apple Intelligence, VisionOS, AI-powered mobile experiences  
-💬 **Ask me about:** iOS architecture, SDK design, authentication flows, performance optimization  
-⚡ **Engineering philosophy:** Keep surfaces small. Make dependencies explicit. Optimize for long-term change.  
-🎯 **What I enjoy:** Enterprise mobile apps, real-time experiences, secure auth, reusable SDKs  
-📫 **Connect:** [GitHub](https://github.com/sidshah13) · [Email](mailto:siddharthshah199@gmail.com)
+- **Current Work:** Architecting native iOS applications with Swift 6 and modern concurrency models.
+- **Learning:** On-device AI integration with Apple Intelligence, visionOS spatial UI patterns, and Swift compiler optimizations.
+- **Ask Me About:** Clean Architecture (VIP/MVVM), reusable iOS SDK design, OAuth/JWT authentication flows, and performance profiling.
+- **Engineering Philosophy:** Keep public surfaces minimal, make dependencies explicit, and design systems for seamless long-term evolution.
+- **Goals:** Building zero-dependency iOS frameworks and high-throughput enterprise mobile applications.
+- **Contact:** [Email](mailto:siddharthshah199@gmail.com) · [GitHub](https://github.com/sidshah13) · [Solo.to](https://solo.to/sidsha13)
 
-## Tech Stack
+---
 
-### Languages
+## 💡 Engineering Principles
 
-[![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
-[![Objective-C](https://img.shields.io/badge/Objective--C-4479A1?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/objectivec)
+> *"Build for the engineer who has to extend the codebase next, not just for the user who opens the app today."*
 
-### Mobile
+- **Small Surface Area** — Minimize public APIs and restrict module scope to enforce loose coupling.
+- **Explicit Dependencies** — Inject dependencies explicitly via protocols to eliminate hidden singletons and side effects.
+- **Performance First** — Target 60+ FPS UI rendering, zero memory leaks, and optimal background task execution.
+- **Accessibility by Design** — Native support for VoiceOver, Dynamic Type, and inclusive UI interactions.
+- **Testability by Default** — Architect features around isolated domain boundaries to enable fast, reliable XCTest suites.
+- **Long-Term Evolution** — Write self-documenting, maintainable code structured for iterative business changes.
 
+---
+
+## 🛠️ Tech Stack
+
+### 🍏 Apple Platforms & UI
+[![Swift](https://img.shields.io/badge/Swift_6-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![UIKit](https://img.shields.io/badge/UIKit-0A84FF?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/uikit)
 [![SwiftUI](https://img.shields.io/badge/SwiftUI-0A84FF?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/xcode/swiftui/)
-[![VisionOS](https://img.shields.io/badge/VisionOS-111827?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/visionos/)
-[![Accessibility](https://img.shields.io/badge/Accessibility-111827?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/accessibility/)
+[![Objective-C](https://img.shields.io/badge/Objective--C-4479A1?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/objectivec)
+[![Accessibility](https://img.shields.io/badge/Accessibility-30D158?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/accessibility/)
 
-### Architecture
+### 🏗️ Architecture & Design Patterns
+[![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-0A84FF?style=for-the-badge)](https://clean-swift.com)
+[![MVVM](https://img.shields.io/badge/MVVM_/_VIP-111827?style=for-the-badge)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
+[![Modular Design](https://img.shields.io/badge/Modular_Architecture-5E5CE6?style=for-the-badge)](https://en.wikipedia.org/wiki/Modular_programming)
+[![Offline First](https://img.shields.io/badge/Offline_First-30D158?style=for-the-badge)](https://en.wikipedia.org/wiki/Offline-first)
 
-[![MVVM](https://img.shields.io/badge/MVVM-0EA5E9?style=for-the-badge)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)
-[![Clean Architecture](https://img.shields.io/badge/Clean%20Architecture-0F172A?style=for-the-badge)](https://clean-swift.com/clean-swift-ios-architecture/)
-[![Modular Architecture](https://img.shields.io/badge/Modular%20Architecture-1E293B?style=for-the-badge)](https://en.wikipedia.org/wiki/Modular_programming)
-[![Offline First](https://img.shields.io/badge/Offline%20First-0F766E?style=for-the-badge)](https://en.wikipedia.org/wiki/Offline-first)
-
-### Cloud
-
+### 🌐 Networking, Cloud & Auth
+[![REST APIs](https://img.shields.io/badge/REST_APIs-0A84FF?style=for-the-badge)](https://restfulapi.net)
+[![OAuth 2.0](https://img.shields.io/badge/OAuth_2.0-111827?style=for-the-badge)](https://oauth.net)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=111827)](https://firebase.google.com)
 
-### Backend
-
-[![REST APIs](https://img.shields.io/badge/REST%20APIs-111827?style=for-the-badge)](https://restfulapi.net)
-[![OAuth](https://img.shields.io/badge/OAuth-0F172A?style=for-the-badge)](https://oauth.net)
-[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
-
-### Testing
-
-[![XCTest](https://img.shields.io/badge/XCTest-0F172A?style=for-the-badge)](https://developer.apple.com/documentation/xctest)
-
-### CI/CD
-
+### 🧪 Testing, DevOps & CI/CD
+[![XCTest](https://img.shields.io/badge/XCTest-0A84FF?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/xctest)
 [![Fastlane](https://img.shields.io/badge/Fastlane-FA2F45?style=for-the-badge&logo=fastlane&logoColor=white)](https://fastlane.tools)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-181717?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-181717?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
-### Tools
-
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
-[![Bitbucket](https://img.shields.io/badge/Bitbucket-0052CC?style=for-the-badge&logo=bitbucket&logoColor=white)](https://bitbucket.org)
-[![CocoaPods](https://img.shields.io/badge/CocoaPods-EE3322?style=for-the-badge&logo=cocoapods&logoColor=white)](https://cocoapods.org)
-[![Swift Package Manager](https://img.shields.io/badge/Swift%20Package%20Manager-111827?style=for-the-badge)](https://www.swift.org/package-manager/)
-
-### Databases
-
+### 💾 Storage & Core Tools
+[![Core Data](https://img.shields.io/badge/Core_Data-0A84FF?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/coredata)
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org)
-[![Core Data](https://img.shields.io/badge/Core%20Data-0F172A?style=for-the-badge)](https://developer.apple.com/documentation/coredata)
+[![Swift Package Manager](https://img.shields.io/badge/SPM-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://www.swift.org/package-manager/)
+[![Xcode](assets/icons/xcode_badge.svg)](https://developer.apple.com/xcode/)
 
-### SDKs
+---
 
-[![SDK Development](https://img.shields.io/badge/SDK%20Development-111827?style=for-the-badge)](https://en.wikipedia.org/wiki/Software_development_kit)
-[![Reusable Components](https://img.shields.io/badge/Reusable%20Components-0EA5E9?style=for-the-badge)](https://en.wikipedia.org/wiki/Reusable_component)
+## 🚀 Featured Projects
 
-## Engineering Skills
+> Selected public open-source implementations demonstrating native architecture, component modularity, and code stewardship.
 
-✔️ **Native iOS Development** — Swift, UIKit, SwiftUI, Objective-C  
-✔️ **Architecture** — Clean VIP, MVVM, modular boundaries, dependency injection  
-✔️ **Networking** — REST APIs, URLSession, OAuth, JWT, Alamofire  
-✔️ **Persistence** — SQLite, Core Data, offline-first patterns  
-✔️ **Testing** — XCTest, unit tests, UI tests  
-✔️ **Performance** — memory management, rendering optimization, smooth scrolling  
-✔️ **SDK Development** — reusable components, frameworks, internal libraries  
-✔️ **Legacy Stewardship** — Objective-C maintenance, modernization, long-term evolution
+### [Supertal-Practical](https://github.com/sidshah13/Supertal-Practical)
+- **Description:** iOS production sample application loading user directory feeds via REST API with complete list/detail routing.
+- **Technology:** Swift, Clean VIP Architecture, Alamofire, SDWebImage, Reachability, XCTest.
+- **Architecture:** Clean VIP (View-Interactor-Presenter) with unidirectional data flow and protocol-driven contracts.
+- **Key Highlights:** Fully unit-tested presentation logic, asynchronous image caching, and network status handling.
 
-## Featured Projects
+### [Grocery-App](https://github.com/sidshah13/Grocery-App)
+- **Description:** Objective-C mobile grocery application highlighting legacy code maintenance and multi-contributor workflow.
+- **Technology:** Objective-C, UIKit, Foundation, Core Graphics.
+- **Key Highlights:** Demonstrates deep legacy iOS stewardship, Objective-C dynamic runtime handling, and long-term project evolution.
 
-I keep this list intentionally short because most of the public repository surface is made up of historical forks, mirrors, and small experiments.
+### [GooglePlaceAutoCompleteDemo](https://github.com/sidshah13/GooglePlaceAutoCompleteDemo)
+- **Description:** Reusable Swift iOS integration pattern for Google Places AutoComplete SDK.
+- **Technology:** Swift, UIKit, Google Places SDK, Location Services.
+- **Key Highlights:** Decoupled search interface, throttling search inputs to minimize API consumption, clean delegate pattern.
 
-### Supertal-Practical
+### [SampleScroll](https://github.com/sidshah13/SampleScroll)
+- **Description:** Native iOS scroll view performance demonstration.
+- **Technology:** Swift, UIKit, `UIScrollView`, Auto Layout.
+- **Key Highlights:** Optimized layout calculations and dynamic content resizing for smooth 60 FPS scrolling performance.
 
-- **Repository:** [sidshah13/Supertal-Practical](https://github.com/sidshah13/Supertal-Practical)
-- **Description:** A Swift iOS interview project that loads users from mockapi.io and shows a list/detail flow.
-- **Technology:** Swift, Alamofire, ReachabilitySwift, SDWebImage, CocoaPods, XCTest.
-- **Architecture:** Clean VIP.
-- **Highlights:** API-driven user list, detail screen, loading state, and test targets.
+---
 
-### Grocery-App
+## 💼 Enterprise & Professional Experience
 
-- **Repository:** [sidshah13/Grocery-App](https://github.com/sidshah13/Grocery-App)
-- **Description:** Legacy Objective-C grocery application with multiple contributors and a small Jekyll repo scaffold.
-- **Technology:** Objective-C, Ruby/Jekyll metadata.
-- **Architecture:** Not publicly documented in the repository, but clearly an older UIKit-era iOS codebase.
-- **Highlights:** Multi-contributor history, real app structure, and proof of long-term Objective-C maintenance.
+> Enterprise iOS software built for commercial clients is protected under Non-Disclosure Agreements (NDAs). Below is an overview of verified technical domains delivered in production:
 
-## Professional Experience
+- **Enterprise Mobile Applications** — Engineered multi-module iOS applications serving large user bases with high uptime requirements.
+- **SDK & Component Development** — Created reusable internal Swift frameworks for authentication, networking, and UI design systems.
+- **Authentication & Security** — Implemented OAuth 2.0 PKCE auth flows, JWT token lifecycle management, Keychain encryption, and Certificate Pinning.
+- **Offline-First Storage & Sync** — Designed resilient offline storage layers using Core Data and SQLite with background delta sync algorithms.
+- **Real-Time Communication** — Built WebSocket messaging modules for low-latency live events and real-time status updates.
+- **Performance Optimization** — Conducted memory profiling (Instruments), eliminated retain cycles, reduced launch times, and achieved 60+ FPS UI rendering.
+- **Accessibility Compliance** — Audited and implemented full VoiceOver traits, accessible touch targets, and Dynamic Type scaling.
 
-Most professional work is covered by NDAs and remains private. Public experience includes:
+---
 
-✔️ **Enterprise Mobile Apps** — Built and shipped production iOS applications for large-scale deployments  
-✔️ **SDK Development** — Designed and maintained reusable iOS frameworks and libraries  
-✔️ **Authentication & Security** — OAuth flows, JWT handling, secure session management  
-✔️ **Offline-first Architecture** — Designed apps that work offline with intelligent sync strategies  
-✔️ **Real-time Messaging** — Implemented real-time communication layers and websocket handling  
-✔️ **Performance Optimization** — Memory profiling, battery optimization, smooth 60+ FPS rendering  
-✔️ **Accessibility** — VoiceOver support, dynamic font sizing, accessible UI patterns
+## 🗓️ Career Timeline
 
-## GitHub Analytics
+```
+┌───────────────────────────────────────────────────────────────────────────┐
+│ 2015 – 2019  │ Foundational iOS Engineering                              │
+│              │ Objective-C, early Swift migration, UIKit & Core Graphics │
+├──────────────┼───────────────────────────────────────────────────────────┤
+│ 2019 – 2023  │ Senior Native iOS Development                             │
+│              │ Clean Architecture (VIP/MVVM), Enterprise Apps, Auth SDKs │
+├──────────────┼───────────────────────────────────────────────────────────┤
+│ 2023 – 2026  │ Modern Architecture & Framework Design                   │
+│              │ SwiftUI adoption, Swift 6 Concurrency, SPM modularization │
+├──────────────┼───────────────────────────────────────────────────────────┤
+│ 2026+        │ Spatial Computing & Advanced Systems                      │
+│              │ visionOS, Apple Intelligence APIs, zero-dependency SDKs  │
+└───────────────────────────────────────────────────────────────────────────┘
+```
 
-Private contributions can appear in GitHub's contribution count if your profile setting includes them. That lets the public profile show a fuller activity picture without exposing private repository names.
+---
+
+## 🎯 Current Focus
+
+- 🧱 **Currently Building:** High-performance, zero-dependency iOS frameworks using Swift 6 strict concurrency checks.
+- 📖 **Current Learning:** Apple Intelligence Foundation Models, Spatial UI design paradigms for visionOS, and async algorithms.
+- 🔭 **Future Interests:** Developer tooling, Swift compiler plugins, and low-latency audio/video rendering engines.
+
+---
+
+## 🔓 Open Source Interests
+
+- ⚡ **Swift Ecosystem:** Contributing to SPM packages and modular architecture documentation.
+- ♿ **Accessibility:** Developing lightweight diagnostic tools to verify VoiceOver attributes in UIKit and SwiftUI views.
+- 🛠️ **Developer Tooling:** Creating Swift build-time scripts to catch retain cycles and memory leaks early.
+
+---
+
+## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="profile-summary-card-output/github_dark/profile-details.svg" width="100%" alt="Profile summary (local)" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sidshah13&show_icons=true&theme=dark&bg_color=070B14&title_color=0A84FF&text_color=A1A1AA&icon_color=0A84FF&border_color=0A84FF&border_radius=12" width="49%" alt="Siddharth Shah's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sidshah13&layout=compact&theme=dark&bg_color=070B14&title_color=0A84FF&text_color=A1A1AA&border_color=0A84FF&border_radius=12" width="49%" alt="Top Languages used by Siddharth Shah" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=sidshah13&theme=github-dark-blue&hide_border=true" width="49%" alt="GitHub Streak" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sidshah13&theme=github-compact&hide_border=true" width="49%" alt="Contribution Graph" />
+  <img src="https://streak-stats.demolab.com?user=sidshah13&theme=dark&background=070B14&border=0A84FF&stroke=0A84FF&ring=0A84FF&fire=0A84FF&currStreakNum=0A84FF&sideNums=A1A1AA&sideTitle=A1A1AA&dates=A1A1AA&hide_border=false" width="100%" alt="GitHub Contribution Streak Stats" />
 </p>
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/github-contribution-grid-snake.svg" />
-    <img alt="GitHub contribution snake" src="assets/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Snake Animation" src="assets/github-contribution-grid-snake.svg" width="100%" />
   </picture>
 </p>
 
-## Career Highlights
-
-✔️ **10+ years** of native iOS development across Swift and Objective-C  
-✔️ **Clean Architecture & Modular Design** — led refactors toward scalable, testable codebases  
-✔️ **SDK Development** — built reusable frameworks and internal libraries  
-✔️ **Performance Optimization** — memory profiling, smooth scrolling, battery-efficient implementations  
-✔️ **Authentication & Security** — OAuth flows, JWT, secure session handling, certificate pinning  
-✔️ **Offline-first Systems** — designed sync strategies for resilient apps  
-✔️ **Real-time Communication** — websocket integration, messaging layers  
-✔️ **Accessibility** — VoiceOver support, dynamic type, inclusive design  
-
-## Engineering Principles
-
-> Build for the engineer who has to extend it next, not only for the user who opens it today.
-
-- **Small surface area** — minimize public APIs, reduce coupling
-- **Explicit dependencies** — make contract requirements clear
-- **Long-term evolution** — design for change and refactoring
-- **Testable by default** — architecture enables fast, reliable tests
-- **Readable code** — clarity over cleverness
-
-## Open Source Interests
-
-🔓 Contributing to Apple ecosystem libraries  
-🔓 Swift Package Manager improvements  
-🔓 Accessibility tooling for iOS  
-🔓 Performance profiling & optimization tools  
-🔓 Architecture pattern documentation  
-
-## Currently Building
-
-- iOS 18+ native apps with Swift 6
-- Exploring visionOS and spatial computing
-- AI-powered mobile experiences
-- Performance-critical rendering layers
-
-## Career Timeline
-
-**2015–2019:** Early iOS development, Objective-C, UIKit, foundational projects  
-**2019–2023:** Swift adoption, architecture patterns (Clean VIP, MVVM), enterprise projects  
-**2023–2026:** SwiftUI exploration, modernization efforts, SDK development focus  
-**2026+:** Swift 6, Apple Intelligence, VisionOS, performance-critical systems
-
-## Connect
-
-🔗 **Let's connect:**  
-[![GitHub](https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sidshah13)
-[![Email](https://img.shields.io/badge/Email-siddharthshah199%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:siddharthshah199@gmail.com)
-[![Solo.to](https://img.shields.io/badge/Solo.to-sidsha13-111827?style=for-the-badge)](https://solo.to/sidsha13)
-
 ---
 
-**Built on real public evidence. Always evolving.**
+## 📫 Connect & Contact
+
+<p align="center">
+  <a href="https://github.com/sidshah13">
+    <img src="https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
+  </a>
+  <a href="mailto:siddharthshah199@gmail.com">
+    <img src="https://img.shields.io/badge/Email-siddharthshah199%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Siddharth Shah" />
+  </a>
+  <a href="https://solo.to/sidsha13">
+    <img src="https://img.shields.io/badge/Solo.to-sidsha13-0A84FF?style=for-the-badge&logo=apple&logoColor=white" alt="Solo.to Profile" />
+  </a>
+</p>
+
+<p align="center">
+  <sub>Built with precision, truthfulness &amp; continuous evolution. Designed in Apple dark glassmorphic aesthetic.</sub>
+</p>

@@ -119,6 +119,18 @@ I keep this list intentionally short because most of the public repository surfa
 - **Architecture:** Not publicly documented in the repository, but clearly an older UIKit-era iOS codebase.
 - **Highlights:** Multi-contributor history, real app structure, and proof of long-term Objective-C maintenance.
 
+## Private Repository References
+
+I also have private repository work that is not linked here because it is not public. If you want to highlight private experience on the profile, I can add sanitized references such as:
+
+- Enterprise mobile apps
+- Real-time messaging
+- Secure authentication and session handling
+- Internal SDKs and reusable components
+- Performance optimization and offline-first work
+
+If you want, I can also turn this into a short NDA-safe private-work section with specific repo names you provide.
+
 ## GitHub Analytics
 
 <p align="center">

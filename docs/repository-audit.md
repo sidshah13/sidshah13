@@ -5,6 +5,7 @@
 - Public repositories: 69
 - Language mix: Swift 40, Objective-C 15, Java 1, 13 unlabeled
 - Profile signal: strong iOS history, mostly Swift and Objective-C, with many older forks and reference mirrors
+- Private repositories were not analyzed because they are not publicly accessible from the profile context
 
 ## Strongest Repositories
 

@@ -133,6 +133,8 @@ If you want, I can also turn this into a short NDA-safe private-work section wit
 
 ## GitHub Analytics
 
+Private contributions can appear in GitHub's contribution count if your profile setting includes them. That lets the public profile show a fuller activity picture without exposing private repository names.
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=sidshah13&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github" width="49%" alt="GitHub Stats" />
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sidshah13&layout=compact&hide_border=true&theme=github_dark" width="49%" alt="Top Languages" />

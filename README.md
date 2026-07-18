@@ -1,7 +1,7 @@
 # Siddharth Shah
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/16463311?v=4" width="140" height="140" alt="Siddharth Shah avatar" style="border-radius:50%; border:4px solid #0ea5e9;" />
+  <img src="assets/animoji.svg" width="180" height="180" alt="iOS developer avatar" />
 </p>
 
 <p align="center">

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" role="img" aria-label="Animated iOS developer avatar that alternates between a badge and the GitHub profile image">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="25%" r="80%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="48%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#0b1220" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="swift" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <clipPath id="avatarClip">
+      <circle cx="90" cy="90" r="42"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="90" cy="90" r="86" fill="url(#bg)"/>
+
+  <circle cx="90" cy="90" r="74" fill="none" stroke="#38bdf8" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="6 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 90 90" to="360 90 90" dur="18s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="90" cy="90" r="66" fill="none" stroke="#2563eb" stroke-opacity="0.22" stroke-width="2"/>
+
+  <g>
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.55;0.95;1" dur="8s" repeatCount="indefinite" />
+    <g transform="translate(49 34)">
+      <rect x="0" y="0" width="82" height="112" rx="22" fill="url(#panel)" stroke="#334155" stroke-width="2"/>
+      <rect x="10" y="10" width="62" height="92" rx="16" fill="#0f172a" stroke="#1d4ed8" stroke-opacity="0.4"/>
+      <circle cx="41" cy="100" r="4" fill="#64748b"/>
+
+      <rect x="18" y="18" width="46" height="8" rx="4" fill="url(#accent)" opacity="0.9">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+
+      <text x="41" y="60" text-anchor="middle" fill="#e2e8f0" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700">iOS</text>
+      <text x="41" y="77" text-anchor="middle" fill="#93c5fd" font-family="SFMono-Regular, Menlo, Consolas, monospace" font-size="10">dev</text>
+
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+        <path d="M16 52 L8 60 L16 68" stroke="#93c5fd">
+          <animate attributeName="d" values="M16 52 L8 60 L16 68;M16 50 L6 60 L16 70;M16 52 L8 60 L16 68" dur="3s" repeatCount="indefinite"/>
+        </path>
+        <path d="M66 52 L74 60 L66 68" stroke="#93c5fd">
+          <animate attributeName="d" values="M66 52 L74 60 L66 68;M66 50 L76 60 L66 70;M66 52 L74 60 L66 68" dur="3s" repeatCount="indefinite"/>
+        </path>
+      </g>
+
+      <path d="M31 88 C 38 80, 44 80, 51 88" fill="none" stroke="url(#swift)" stroke-width="5" stroke-linecap="round">
+        <animate attributeName="d" values="M31 88 C 38 80, 44 80, 51 88;M31 86 C 38 78, 44 78, 51 86;M31 88 C 38 80, 44 80, 51 88" dur="4s" repeatCount="indefinite" />
+      </path>
+    </g>
+  </g>
+
+  <g>
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.45;0.55;0.95;1" dur="8s" repeatCount="indefinite" />
+    <circle cx="90" cy="90" r="48" fill="#0b1220" stroke="#334155" stroke-width="2"/>
+    <circle cx="90" cy="90" r="46" fill="#020617"/>
+    <image href="https://avatars.githubusercontent.com/u/16463311?v=4" x="48" y="48" width="84" height="84" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatarClip)"/>
+    <circle cx="90" cy="90" r="42" fill="none" stroke="#93c5fd" stroke-opacity="0.65" stroke-width="2"/>
+    <circle cx="90" cy="90" r="58" fill="none" stroke="#2563eb" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 7">
+      <animateTransform attributeName="transform" type="rotate" from="360 90 90" to="0 90 90" dur="14s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <g opacity="0.4">
+    <circle cx="43" cy="50" r="5" fill="#bfdbfe"/>
+    <circle cx="136" cy="56" r="4" fill="#bfdbfe"/>
+    <circle cx="124" cy="34" r="3" fill="#93c5fd"/>
+    <circle cx="146" cy="118" r="4" fill="#60a5fa"/>
+  </g>
+</svg>

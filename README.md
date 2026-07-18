@@ -1,7 +1,7 @@
 # Siddharth Shah
 
 <p align="center">
-  <img src="assets/animoji.svg" width="180" height="180" alt="iOS developer avatar" />
+  <img src="assets/animoji.gif" width="180" height="180" alt="Animated iOS developer avatar alternating between an iOS badge and profile image" />
 </p>
 
 <p align="center">
@@ -12,6 +12,10 @@
   <img src="https://komarev.com/ghpvc/?username=sidshah13&style=for-the-badge&color=0EA5E9" alt="Visitor badge" />
   <img src="https://img.shields.io/github/followers/sidshah13?style=for-the-badge&color=0EA5E9&label=Followers" alt="Followers badge" />
   <img src="https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub badge" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/GitHub%20Achievement-Pull%20Shark%20x2-0EA5E9?style=for-the-badge&logo=github&logoColor=white" alt="Pull Shark x2 achievement badge" />
 </p>
 
 <p align="center">

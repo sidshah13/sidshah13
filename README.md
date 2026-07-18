@@ -1,6 +1,10 @@
 # Siddharth Shah
 
 <p align="center">
+  <img src="https://avatars.githubusercontent.com/u/16463311?v=4" width="140" height="140" alt="Siddharth Shah avatar" style="border-radius:50%; border:4px solid #0ea5e9;" />
+</p>
+
+<p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&lines=Senior+iOS+Engineer;Swift+%7C+UIKit+%7C+SwiftUI;Clean+Architecture+%7C+SDK+Development;Secure%2C+scalable+mobile+products" alt="Typing SVG" />
 </p>
 
@@ -11,7 +15,7 @@
 </p>
 
 <p align="center">
-  <strong>Senior iOS Engineer</strong> with <strong>7+ years</strong> of experience building polished mobile experiences with Swift, Objective-C, UIKit, SwiftUI, and clean architecture.
+  <strong>Senior iOS Engineer</strong> with <strong>10+ years</strong> of experience building polished mobile experiences with Swift, Objective-C, UIKit, SwiftUI, and clean architecture.
 </p>
 
 ## Professional Summary

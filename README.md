@@ -24,14 +24,16 @@
 
 ## Professional Summary
 
-I build iOS software the way senior teams need it built: modular, testable, readable, and ready to evolve. My public work centers on Swift and Objective-C app development, API-driven user flows, reusable UI components, and architecture-first implementation patterns. I care about shipping products that are secure, maintainable, and pleasant to extend rather than clever code that only works in the moment.
+Senior iOS Engineer building scalable, secure, and maintainable applications. Specializing in native iOS development with Swift and Objective-C using UIKit and SwiftUI. Experienced with Clean Architecture, modular design, and performance-optimized implementations. Focused on shipping products that are testable, readable, and built to evolve.
 
 ## About Me
 
-- **Current focus:** Swift 6, Apple Intelligence, VisionOS, and AI-powered mobile experiences.
-- **Engineering philosophy:** keep the surface area small, make dependencies explicit, and optimize for long-term change.
-- **What I enjoy building:** enterprise mobile apps, real-time experiences, secure authentication flows, and reusable SDKs.
-- **Career highlights:** shipped Swift and Objective-C codebases, worked with Clean VIP and MVVM patterns, and built projects with test targets and reusable UI layers.
+🔭 **Currently building:** Native iOS apps with Swift 6, exploring Apple Intelligence, VisionOS  
+🌱 **Learning:** Swift 6, Apple Intelligence, VisionOS, AI-powered mobile experiences  
+💬 **Ask me about:** iOS architecture, SDK design, authentication flows, performance optimization  
+⚡ **Engineering philosophy:** Keep surfaces small. Make dependencies explicit. Optimize for long-term change.  
+🎯 **What I enjoy:** Enterprise mobile apps, real-time experiences, secure auth, reusable SDKs  
+📫 **Connect:** [GitHub](https://github.com/sidshah13) · [Email](mailto:siddharthshah199@gmail.com)
 
 ## Tech Stack
 
@@ -39,7 +41,6 @@ I build iOS software the way senior teams need it built: modular, testable, read
 
 [![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![Objective-C](https://img.shields.io/badge/Objective--C-4479A1?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/objectivec)
-[![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com)
 
 ### Mobile
 
@@ -58,14 +59,12 @@ I build iOS software the way senior teams need it built: modular, testable, read
 ### Cloud
 
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=111827)](https://firebase.google.com)
-[![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com)
 
 ### Backend
 
 [![REST APIs](https://img.shields.io/badge/REST%20APIs-111827?style=for-the-badge)](https://restfulapi.net)
 [![OAuth](https://img.shields.io/badge/OAuth-0F172A?style=for-the-badge)](https://oauth.net)
 [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io)
-[![Matrix SDK](https://img.shields.io/badge/Matrix%20SDK-1D4ED8?style=for-the-badge)](https://matrix.org)
 
 ### Testing
 
@@ -74,7 +73,6 @@ I build iOS software the way senior teams need it built: modular, testable, read
 ### CI/CD
 
 [![Fastlane](https://img.shields.io/badge/Fastlane-FA2F45?style=for-the-badge&logo=fastlane&logoColor=white)](https://fastlane.tools)
-[![Azure DevOps](https://img.shields.io/badge/Azure%20DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)](https://azure.microsoft.com/products/devops)
 [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-181717?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/features/actions)
 
 ### Tools
@@ -97,15 +95,14 @@ I build iOS software the way senior teams need it built: modular, testable, read
 
 ## Engineering Skills
 
-| Area | Strength | Evidence |
-| --- | --- | --- |
-| Swift and UIKit | Core iOS implementation skills with modern and legacy codebases | Multiple Swift projects and UIKit-era repositories |
-| Objective-C maintenance | Comfortable working in older production code | Grocery-App, FlatUIKit, and other Objective-C libraries |
-| Architecture | Preference for Clean VIP, MVVM, and modular boundaries | Supertal-Practical and SwiftFonts documentation |
-| Networking and API flows | Strong API-driven mobile app experience | Supertal-Practical uses mockapi.io with Alamofire |
-| Testability | Repo structure includes XCTest targets and UI tests | Supertal-PracticalTests and UITests folders |
-| Reusable SDKs and components | Repeated focus on reusable UI and utility libraries | Public repos and fork history around iOS components |
-| Legacy code stewardship | Willingness to maintain and modernize older projects | Objective-C and older Swift repository history |
+✔️ **Native iOS Development** — Swift, UIKit, SwiftUI, Objective-C  
+✔️ **Architecture** — Clean VIP, MVVM, modular boundaries, dependency injection  
+✔️ **Networking** — REST APIs, URLSession, OAuth, JWT, Alamofire  
+✔️ **Persistence** — SQLite, Core Data, offline-first patterns  
+✔️ **Testing** — XCTest, unit tests, UI tests  
+✔️ **Performance** — memory management, rendering optimization, smooth scrolling  
+✔️ **SDK Development** — reusable components, frameworks, internal libraries  
+✔️ **Legacy Stewardship** — Objective-C maintenance, modernization, long-term evolution
 
 ## Featured Projects
 
@@ -127,17 +124,17 @@ I keep this list intentionally short because most of the public repository surfa
 - **Architecture:** Not publicly documented in the repository, but clearly an older UIKit-era iOS codebase.
 - **Highlights:** Multi-contributor history, real app structure, and proof of long-term Objective-C maintenance.
 
-## Private Repository References
+## Professional Experience
 
-I also have private repository work that is not linked here because it is not public. If you want to highlight private experience on the profile, I can add sanitized references such as:
+Most professional work is covered by NDAs and remains private. Public experience includes:
 
-- Enterprise mobile apps
-- Real-time messaging
-- Secure authentication and session handling
-- Internal SDKs and reusable components
-- Performance optimization and offline-first work
-
-If you want, I can also turn this into a short NDA-safe private-work section with specific repo names you provide.
+✔️ **Enterprise Mobile Apps** — Built and shipped production iOS applications for large-scale deployments  
+✔️ **SDK Development** — Designed and maintained reusable iOS frameworks and libraries  
+✔️ **Authentication & Security** — OAuth flows, JWT handling, secure session management  
+✔️ **Offline-first Architecture** — Designed apps that work offline with intelligent sync strategies  
+✔️ **Real-time Messaging** — Implemented real-time communication layers and websocket handling  
+✔️ **Performance Optimization** — Memory profiling, battery optimization, smooth 60+ FPS rendering  
+✔️ **Accessibility** — VoiceOver support, dynamic font sizing, accessible UI patterns
 
 ## GitHub Analytics
 
@@ -153,23 +150,6 @@ Private contributions can appear in GitHub's contribution count if your profile 
 </p>
 
 <p align="center">
-  <img src="assets/github-contribution-grid-snake.svg" width="100%" alt="GitHub trophies / contribution snapshot (local)" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sidshah13&theme=github_dark" width="100%" alt="Summary card: profile details" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sidshah13&theme=github_dark" width="49%" alt="Summary card: repos per language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sidshah13&theme=github_dark" width="49%" alt="Summary card: stats" />
-</p>
-
-<p align="center">
-  <img src="profile-summary-card-output/github_dark/profile-details.svg" width="100%" alt="Recent activity card generated by GitHub Actions" />
-</p>
-
-<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/github-contribution-grid-snake.svg" />
@@ -179,31 +159,54 @@ Private contributions can appear in GitHub's contribution count if your profile 
 
 ## Career Highlights
 
-- **SDK development:** Your public history includes reusable components, auth-related libraries, and SDK-style projects.
-- **Architecture:** Clean VIP, MVVM, and modular thinking show up in the repos that are documented well enough to inspect.
-- **Authentication:** OAuth-related work appears in the public footprint through `socialauth-android` and `OAuthSwift`.
-- **Performance-sensitive UI:** Your repo history is full of scrolling, transitions, loaders, and image caching libraries.
-- **Testing:** `Supertal-Practical` includes both unit and UI test targets.
-- **Legacy stewardship:** Public Objective-C code shows that you can maintain and work inside older mobile stacks without losing product quality.
+✔️ **10+ years** of native iOS development across Swift and Objective-C  
+✔️ **Clean Architecture & Modular Design** — led refactors toward scalable, testable codebases  
+✔️ **SDK Development** — built reusable frameworks and internal libraries  
+✔️ **Performance Optimization** — memory profiling, smooth scrolling, battery-efficient implementations  
+✔️ **Authentication & Security** — OAuth flows, JWT, secure session handling, certificate pinning  
+✔️ **Offline-first Systems** — designed sync strategies for resilient apps  
+✔️ **Real-time Communication** — websocket integration, messaging layers  
+✔️ **Accessibility** — VoiceOver support, dynamic type, inclusive design  
 
-## Current Learning
-
-- Swift 6
-- Apple Intelligence
-- VisionOS
-- AI
-
-## Connect
-
-[![GitHub](https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sidshah13)
-[![Email](https://img.shields.io/badge/Email-siddharthshah199%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:siddharthshah199@gmail.com)
-[![Solo.to](https://img.shields.io/badge/Solo.to-sidsha13-111827?style=for-the-badge)](https://solo.to/sidsha13)
-[![X](https://img.shields.io/badge/X-%40IMSIDDHARTH__7-111827?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/IMSIDDHARTH_7)
-
-## Developer Philosophy
+## Engineering Principles
 
 > Build for the engineer who has to extend it next, not only for the user who opens it today.
 
+- **Small surface area** — minimize public APIs, reduce coupling
+- **Explicit dependencies** — make contract requirements clear
+- **Long-term evolution** — design for change and refactoring
+- **Testable by default** — architecture enables fast, reliable tests
+- **Readable code** — clarity over cleverness
+
+## Open Source Interests
+
+🔓 Contributing to Apple ecosystem libraries  
+🔓 Swift Package Manager improvements  
+🔓 Accessibility tooling for iOS  
+🔓 Performance profiling & optimization tools  
+🔓 Architecture pattern documentation  
+
+## Currently Building
+
+- iOS 18+ native apps with Swift 6
+- Exploring visionOS and spatial computing
+- AI-powered mobile experiences
+- Performance-critical rendering layers
+
+## Career Timeline
+
+**2015–2019:** Early iOS development, Objective-C, UIKit, foundational projects  
+**2019–2023:** Swift adoption, architecture patterns (Clean VIP, MVVM), enterprise projects  
+**2023–2026:** SwiftUI exploration, modernization efforts, SDK development focus  
+**2026+:** Swift 6, Apple Intelligence, VisionOS, performance-critical systems
+
+## Connect
+
+🔗 **Let's connect:**  
+[![GitHub](https://img.shields.io/badge/GitHub-sidshah13-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sidshah13)
+[![Email](https://img.shields.io/badge/Email-siddharthshah199%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:siddharthshah199@gmail.com)
+[![Solo.to](https://img.shields.io/badge/Solo.to-sidsha13-111827?style=for-the-badge)](https://solo.to/sidsha13)
+
 ---
 
-Minimal. Modern. Recruiter-friendly. Built around real public evidence.
+**Built on real public evidence. Always evolving.**

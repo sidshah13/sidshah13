@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="GitHub contribution snake dark placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="200" rx="24" fill="url(#bg)"/>
+  <g fill="none" stroke="url(#line)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M120 108 C 210 58, 280 58, 360 108 S 510 158, 600 108 S 750 58, 840 108 S 990 158, 1080 108"/>
+    <path d="M120 108 C 210 118, 280 118, 360 108 S 510 98, 600 108 S 750 118, 840 108 S 990 98, 1080 108" opacity="0.45"/>
+  </g>
+  <text x="600" y="54" text-anchor="middle" fill="#7dd3fc" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">GitHub Contribution Snake</text>
+  <text x="600" y="90" text-anchor="middle" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="18">Placeholder until the daily workflow writes the live SVG</text>
+</svg>

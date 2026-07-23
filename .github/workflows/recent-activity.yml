@@ -19,6 +19,7 @@ jobs:
         uses: jamesgeorge007/github-activity-readme@v0.4.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
         with:
           COMMIT_MSG: 'chore(activity): update recent GitHub activity'
           MAX_LINES: 5

@@ -164,6 +164,13 @@ Senior iOS Engineer with **7+ years** of experience engineering scalable, resili
 
 ---
 
+## ⚡ Recent Activity
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+---
+
 ## 📊 GitHub Analytics
 
 <p align="center">

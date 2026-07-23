@@ -19,6 +19,7 @@ jobs:
         uses: vn7n24fzkq/github-profile-summary-cards@release
         env:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || github.token }}
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
         with:
           USERNAME: ${{ github.repository_owner }}
           BRANCH_NAME: main
@@ -30,6 +31,8 @@ jobs:
 
       - name: Generate snake animation
         uses: Platane/snk/svg-only@v3
+        env:
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: 'true'
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |

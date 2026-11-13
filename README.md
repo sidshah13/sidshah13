@@ -235,8 +235,8 @@ The examples below describe recurring engineering problem spaces from profession
 ## 📈 GitHub activity
 
 <p align="center">
-  <img src="assets/github-stats.svg" width="49%" alt="GitHub profile statistics" />
-  <img src="assets/top-languages.svg" width="49%" alt="Most used programming languages" />
+  <img src="https://raw.githubusercontent.com/sidshah13/sidshah13/main/assets/github-stats.svg" width="49%" alt="GitHub profile statistics" />
+  <img src="https://raw.githubusercontent.com/sidshah13/sidshah13/main/assets/top-languages.svg" width="49%" alt="Most used programming languages" />
 </p>
 
 <p align="center">

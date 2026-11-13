@@ -1,0 +1,45 @@
+name: Update profile statistics
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/profile-stats.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub statistics
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: assets/github-stats.svg
+          colors: dark-dimmed
+          custom-title: GitHub Statistics
+          hide-keys: languages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate language distribution
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: assets/top-languages.svg
+          colors: dark-dimmed
+          custom-title: Most Used Languages
+          hide-keys: general, contributions, repositories
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

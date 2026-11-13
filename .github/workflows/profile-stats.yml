@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - ".github/workflows/profile-stats.yml"
+      - "scripts/generate_profile_stats.py"
 
 permissions:
   contents: write
@@ -23,23 +24,22 @@ jobs:
     steps:
       - name: Checkout profile repository
         uses: actions/checkout@v4
-
-      - name: Generate GitHub statistics
-        uses: cicirello/user-statistician@v1
         with:
-          image-file: assets/github-stats.svg
-          colors: dark-dimmed
-          custom-title: GitHub Statistics
-          hide-keys: languages
+          persist-credentials: true
+
+      - name: Generate statistics SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate_profile_stats.py
 
-      - name: Generate language distribution
-        uses: cicirello/user-statistician@v1
-        with:
-          image-file: assets/top-languages.svg
-          colors: dark-dimmed
-          custom-title: Most Used Languages
-          hide-keys: general, contributions, repositories
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-stats.svg assets/top-languages.svg
+          if git diff --cached --quiet; then
+            echo "Statistics are already up to date."
+          else
+            git commit -m "chore: refresh GitHub profile statistics"
+            git push
+          fi

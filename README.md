@@ -202,6 +202,36 @@ Commercial client work is covered by confidentiality agreements. The following s
 - **Testable boundaries** — Keep business rules independently testable and easy to reason about.
 - **Evolution over cleverness** — Choose understandable solutions that can adapt as requirements change.
 
+## 🧩 Engineering work in practice
+
+The examples below describe recurring engineering problem spaces from professional work. Client and product details are intentionally omitted where work is confidential.
+
+| Area | Engineering problems I work through |
+|:--|:--|
+| **Modular iOS SDKs** | Designing Swift package boundaries, stable public APIs, app/extension integration, environment configuration and secure SDK setup. |
+| **Swift 6 modernization** | Adopting strict concurrency, clarifying actor isolation, handling callback boundaries and making asynchronous APIs safer without hiding problems behind unsafe escape hatches. |
+| **Offline-first applications** | Keeping local data workflows reliable, coordinating synchronization, protecting database consistency and preserving existing business rules. |
+| **Local-first AI workflows** | Translating natural-language requests into structured intent, then validating and executing operations through existing local domain logic and database services. |
+| **Real-time messaging** | Building integration layers around messaging SDKs, session restoration, lifecycle handling and notification delivery. |
+
+### How I approach an engineering problem
+
+1. **Understand the current behavior** — map the user flow, existing business rules, data ownership and integration points.
+2. **Identify constraints and risks** — compatibility, concurrency, security, performance, migration cost and failure paths.
+3. **Design the smallest maintainable change** — clear boundaries, explicit dependencies and minimal public API surface.
+4. **Validate the outcome** — tests, static analysis, profiling, documentation and regression checks.
+
+### Useful topics to discuss
+
+- Swift 6 migration and practical concurrency debugging
+- UIKit / SwiftUI architecture and modularization
+- Building and distributing reusable iOS SDKs
+- Offline-first data flows and synchronization
+- Secure authentication, Keychain and certificate pinning
+- Integrating AI while keeping business logic and local data authoritative
+
+---
+
 ## 📈 GitHub activity
 
 <p align="center">

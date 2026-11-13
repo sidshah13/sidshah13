@@ -1,142 +1,101 @@
 #!/usr/bin/env python3
-
+"""Generate static GitHub profile cards using the GitHub REST API."""
 import json
 import os
+import urllib.request
+import urllib.error
+from collections import Counter
 from html import escape
 from pathlib import Path
-from typing import Any
-from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
 
-USERNAME = "sidshah13"
-API_ROOT = "https://api.github.com"
-REQUEST_TIMEOUT_SECONDS = 30
-USER_AGENT = "sidshah13-profile-stats-generator/1.0"
+OWNER = "sidshah13"
+API = "https://api.github.com"
+TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
 
-def api_get(path: str, token: str | None = None) -> Any:
+def api(path):
     headers = {
         "Accept": "application/vnd.github+json",
-        "User-Agent": USER_AGENT,
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "sidshah13-profile-stats",
     }
-    if token:
-        headers["Authorization"] = "Bearer " + token
+    if TOKEN:
+        headers["Authorization"] = f"Bearer {TOKEN}"
+    request = urllib.request.Request(API + path, headers=headers)
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.load(response)
 
-    request = Request(f"{API_ROOT}{path}", headers=headers)
-    with urlopen(request, timeout=REQUEST_TIMEOUT_SECONDS) as response:
-        return json.loads(response.read().decode("utf-8"))
+
+def svg_shell(title, subtitle, body, height=230):
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="{height}" viewBox="0 0 495 {height}" role="img" aria-label="{escape(title)}">
+<rect x="1" y="1" width="493" height="{height-2}" rx="15" fill="#070B14" stroke="#24324A" stroke-width="2"/>
+<text x="26" y="39" fill="#64D2FF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="700">{escape(title)}</text>
+<text x="26" y="62" fill="#8B949E" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11">{escape(subtitle)}</text>
+{body}
+</svg>'''
 
 
-def fetch_repositories(token: str | None = None) -> list[dict[str, Any]]:
-    repositories: list[dict[str, Any]] = []
+def text(x, y, value, size=14, color="#C9D1D9", weight="400"):
+    return f'<text x="{x}" y="{y}" fill="{color}" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="{size}" font-weight="{weight}">{escape(str(value))}</text>'
+
+
+def main():
+    user = api(f"/users/{OWNER}")
+    repos = []
     page = 1
     while True:
-        batch = api_get(f"/users/{USERNAME}/repos?per_page=100&page={page}", token)
+        batch = api(f"/users/{OWNER}/repos?type=owner&visibility=public&per_page=100&page={page}&sort=updated")
         if not batch:
             break
-        repositories.extend(batch)
+        repos.extend(r for r in batch if not r.get("fork") and not r.get("archived"))
         if len(batch) < 100:
             break
         page += 1
-    return repositories
 
-
-def render_github_stats_svg(stats: dict[str, int]) -> str:
-    lines = [
-        ("Public Repositories", stats["public_repos"]),
-        ("Followers", stats["followers"]),
-        ("Following", stats["following"]),
-        ("Total Stars", stats["stars"]),
-    ]
-    rows = []
-    y = 84
-    for label, value in lines:
-        rows.append(
-            f'<text x="36" y="{y}" fill="#C9D1D9" font-family="Segoe UI, Arial, sans-serif" '
-            f'font-size="19">{escape(label)}: <tspan fill="#64D2FF">{value}</tspan></text>'
-        )
-        y += 44
-
-    return (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" viewBox="0 0 700 260">'
-        '<rect width="700" height="260" rx="14" fill="#070B14" stroke="#24324A" />'
-        '<text x="36" y="48" fill="#0A84FF" font-family="Segoe UI, Arial, sans-serif" '
-        'font-size="26" font-weight="600">GitHub Profile Statistics</text>'
-        f'{"".join(rows)}'
-        "</svg>"
-    )
-
-
-def render_top_languages_svg(language_counts: list[tuple[str, int]]) -> str:
-    rows = []
-    top = language_counts[:8]
-    max_count = max((count for _, count in top), default=1)
-    y = 78
-    for language, count in top:
-        ratio = count / max_count
-        bar_width = max(8, int(350 * ratio))
-        rows.append(
-            '<g>'
-            f'<text x="36" y="{y}" fill="#C9D1D9" font-family="Segoe UI, Arial, sans-serif" '
-            f'font-size="17">{escape(language)} <tspan fill="#8B949E">({count})</tspan></text>'
-            f'<rect x="250" y="{y - 15}" width="370" height="14" rx="7" fill="#151B23" />'
-            f'<rect x="250" y="{y - 15}" width="{bar_width}" height="14" rx="7" fill="#64D2FF" />'
-            "</g>"
-        )
-        y += 34
-
-    return (
-        '<svg xmlns="http://www.w3.org/2000/svg" width="700" height="360" viewBox="0 0 700 360">'
-        '<rect width="700" height="360" rx="14" fill="#070B14" stroke="#24324A" />'
-        '<text x="36" y="48" fill="#0A84FF" font-family="Segoe UI, Arial, sans-serif" '
-        'font-size="26" font-weight="600">Top Languages by Repository Count</text>'
-        f'{"".join(rows)}'
-        "</svg>"
-    )
-
-
-def write_if_changed(path: Path, content: str) -> None:
-    previous = path.read_text(encoding="utf-8") if path.exists() else None
-    if previous == content:
-        print(f"No changes for {path.as_posix()}")
-        return
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(content, encoding="utf-8")
-    print(f"Updated {path.as_posix()}")
-
-
-def main() -> None:
-    root = Path(__file__).resolve().parents[1]
-    stats_path = root / "assets/github-stats.svg"
-    languages_path = root / "assets/top-languages.svg"
-    token = os.environ.get("GITHUB_TOKEN")
-
-    try:
-        user = api_get(f"/users/{USERNAME}", token)
-        repos = [repo for repo in fetch_repositories(token) if not repo.get("fork")]
-    except (HTTPError, URLError, TimeoutError, ValueError) as exc:
-        if stats_path.exists() and languages_path.exists():
-            print(f"Warning: failed to refresh statistics ({exc!s}); keeping existing assets.")
-            return
-        raise RuntimeError("Failed to fetch repository statistics from GitHub API") from exc
-
-    stats = {
-        "public_repos": int(user.get("public_repos", 0)),
-        "followers": int(user.get("followers", 0)),
-        "following": int(user.get("following", 0)),
-        "stars": sum(int(repo.get("stargazers_count", 0)) for repo in repos),
-    }
-
-    language_counts: dict[str, int] = {}
+    stars = sum(r.get("stargazers_count", 0) for r in repos)
+    forks = sum(r.get("forks_count", 0) for r in repos)
+    languages = Counter()
     for repo in repos:
-        language = repo.get("language")
-        if language:
-            language_counts[language] = language_counts.get(language, 0) + 1
+        try:
+            languages.update(api(f"/repos/{OWNER}/{repo['name']}/languages"))
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError):
+            continue
 
-    sorted_languages = sorted(language_counts.items(), key=lambda item: (-item[1], item[0].lower()))
+    metrics = [
+        ("PUBLIC REPOSITORIES", len(repos)),
+        ("TOTAL STARS", stars),
+        ("TOTAL FORKS", forks),
+        ("FOLLOWERS", user.get("followers", 0)),
+    ]
+    body = ""
+    positions = [(26, 112), (265, 112), (26, 174), (265, 174)]
+    for (label, value), (x, y) in zip(metrics, positions):
+        body += text(x, y, label, 10, "#8B949E", "600")
+        body += text(x, y + 25, f"{value:,}", 23, "#C9D1D9", "700")
+    Path("assets/github-stats.svg").write_text(
+        svg_shell("GitHub Statistics", "Public, non-fork repositories · refreshed daily", body, 220),
+        encoding="utf-8",
+    )
 
-    write_if_changed(stats_path, render_github_stats_svg(stats))
-    write_if_changed(languages_path, render_top_languages_svg(sorted_languages))
+    total = sum(languages.values())
+    sorted_languages = languages.most_common(6)
+    body = ""
+    y = 96
+    palette = ["#64D2FF", "#0A84FF", "#5E5CE6", "#30A46C", "#F5A623", "#E879F9"]
+    if total:
+        for index, (name, amount) in enumerate(sorted_languages):
+            pct = amount / total * 100
+            body += text(26, y, name, 12, "#C9D1D9", "600")
+            body += text(465, y, f"{pct:.1f}%", 12, "#C9D1D9", "600").replace('text x="465"', 'text x="465" text-anchor="end"')
+            body += f'<rect x="26" y="{y+10}" width="443" height="7" rx="3.5" fill="#182235"/>'
+            body += f'<rect x="26" y="{y+10}" width="{443*pct/100:.2f}" height="7" rx="3.5" fill="{palette[index]}"/>'
+            y += 28
+    else:
+        body += text(26, 112, "Language data is not available yet.", 13)
+    Path("assets/top-languages.svg").write_text(
+        svg_shell("Most Used Languages", "Aggregated across public, non-fork repositories", body, 270),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":
